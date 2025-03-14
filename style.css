@@ -1,14 +1,43 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+ 
  body {
+    height: 100vh;
+    box-sizing: border-box;
     background-color: #000000;
     color: white;
  }
 
- .titulo-destaque{
-    color: rgb(40, 236, 236);
+ .foto-ia {
+    width: 402px;
+    height: auto;
+  }
+  
+ .titulo-destaque {
+    color: rgb(45, 230, 230);
  }
 
- .paragrafo-habilidades{
+ .paragrafo-habilidades {
     color: rgb(28, 174, 218);
  }
 
- 
+.apresentacao {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__sobre-mim {
+    margin: 5%;
+    width: 855px;
+    height: 2;
+}
+
+.nome {
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
