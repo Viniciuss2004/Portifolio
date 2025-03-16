@@ -1,43 +1,169 @@
- * {
+/* Mantém o estilo geral */
+* {
     margin: 0;
     padding: 0;
- }
- 
- body {
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #000000;
-    color: white;
- }
-
- .foto-ia {
-    width: 402px;
-    height: auto;
-  }
-  
- .titulo-destaque {
-    color: rgb(45, 230, 230);
- }
-
- .paragrafo-habilidades {
-    color: rgb(28, 174, 218);
- }
-
-.apresentacao {
-    margin: 2%;
-    display: flex;
-    justify-content: space-between;
 }
 
-.apresentacao__sobre-mim {
-    margin: 5%;
-    width: 855px;
-    height: 2;
+body {
+    margin: 2%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #000000, #011941); /* Degradê de azul escuro para um tom mais claro */
+    color: white;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens */
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 .nome {
-    margin: 2%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 10px; /* Ajuste conforme necessário */
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 15px; /* Ajuste conforme necessário */
+}
+
+.foto-ia {
+    width: 402px;
+    height: auto;
+}
+
+.apresentacao__foto {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.apresentacao__botao {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-bottom: 30px; /* Dá mais espaço entre os botões e o conteúdo */
+}
+
+/* Estilo dos botões */
+.botao-linkedin, .botao-github, .botao-whatsapp {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo do botão LinkedIn */
+.botao-linkedin {
+    background-color: rgb(4, 127, 165); /* Cor azul do LinkedIn */
+    color: white;
+}
+
+.botao-linkedin:hover {
+    background-color: rgb(4, 165, 252); /* Tom mais escuro de azul do LinkedIn */
+    transform: scale(1.05);
+}
+
+/* Estilo do botão GitHub */
+.botao-github {
+    background-color: rgb(28, 32, 36); /* Cor do GitHub */
+    color: white;
+}
+
+.botao-github:hover {
+    background-color: rgb(44, 49, 56); /* Tom mais escuro de GitHub */
+    transform: scale(1.05);
+}
+
+/* Estilo do botão WhatsApp */
+.botao-whatsapp {
+    background-color: rgb(15, 173, 29); /* Cor do WhatsApp */
+    color: white;
+}
+
+.botao-whatsapp:hover {
+    background-color: rgb(36, 226, 10); /* Tom mais escuro de WhatsApp */
+    transform: scale(1.05);
+}
+
+.divisoria {
+    width: 100%; /* Largura total do contêiner */
+    height: 2px; /* Altura da linha */
+    background: linear-gradient(to right, #0c09b3, #df0606); /* Gradiente de cor */
+    border-radius: 5px; /* Arredondamento das extremidades */
+    margin-bottom: 30px;
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-bottom: 30px; /* Aumenta o espaço abaixo do conteúdo */
+}
+
+.paragrafo-habilidades {
+    color: rgb(28, 174, 218);
+}
+
+.descricao-container {
+    display: flex;  /* Deixa os blocos lado a lado */
+    gap: 40px;  /* Espaço entre os blocos */
+    justify-content: space-between; /* Distribui os blocos uniformemente */
+}
+
+.hard-skills {
+    display: flex;
+    flex-direction: column; /* Título em cima, itens embaixo */
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column; /* Título em cima, itens embaixo */
+    align-items: center; /* Mantém alinhado à esquerda */
+}
+
+.titulo-habilidade {
+    color:rgb(255, 255, 255); 
+    max-width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Dá um espaço entre o título e os itens */
+}
+
+.titulo-experiencia {
+    color:rgb(255, 255, 255); 
+    max-width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Dá um espaço entre o título e os itens */
+}
+
+.descricao-har {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.descricao-cabecalho {
+    max-width: 600px;
+    columns: 2;
+    gap: 160px;
+    font-size: 18px;
+    line-height: 1.5;
+    align-items: right;
+}
+
+strong {
+    color: rgb(28, 174, 218);
 }
