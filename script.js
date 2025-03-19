@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const experiencias = document.querySelectorAll('.experiencia-item');
     const totalExperiencias = experiencias.length;
 
-    // Função para mostrar a experiência atual
     function mostrarExperiencia(index) {
         experiencias.forEach((experiencia, i) => {
             experiencia.classList.remove('ativo');
@@ -13,18 +12,52 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Navegar para a próxima experiência
-    document.getElementById('seta-direita').addEventListener('click', function() {
+    document.getElementById('seta-dupla-direita').addEventListener('click', function() {
         currentIndex = (currentIndex + 1) % totalExperiencias;
         mostrarExperiencia(currentIndex);
     });
 
-    // Navegar para a experiência anterior
-    document.getElementById('seta-esquerda').addEventListener('click', function() {
+    document.getElementById('seta-dupla-esquerda').addEventListener('click', function() {
         currentIndex = (currentIndex - 1 + totalExperiencias) % totalExperiencias;
         mostrarExperiencia(currentIndex);
     });
 
-    // Inicializar a primeira experiência
     mostrarExperiencia(currentIndex);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const setas = document.querySelectorAll('.seta');
+    const bolinhas = document.querySelectorAll('.bolinha');
+    let indiceAtivo = 0;
+
+    function atualizarBolinhas() {
+        bolinhas.forEach((bolinha, index) => {
+            if (index === indiceAtivo) {
+                bolinha.classList.add('ativa');
+            } else {
+                bolinha.classList.remove('ativa');
+            }
+        });
+    }
+
+    document.getElementById('seta-dupla-direita').addEventListener('click', () => {
+        if (indiceAtivo < bolinhas.length - 1) {
+            indiceAtivo++;
+        } else {
+            indiceAtivo = 0;
+        }
+        atualizarBolinhas();
+    });
+
+    document.getElementById('seta-dupla-esquerda').addEventListener('click', () => {
+        if (indiceAtivo > 0) {
+            indiceAtivo--;
+        } else {
+            indiceAtivo = bolinhas.length - 1;
+        }
+        atualizarBolinhas();
+    });
+
+    atualizarBolinhas();
+});
+
