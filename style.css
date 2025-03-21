@@ -106,13 +106,13 @@ body {
 
 .descricao-container-1 {
     display: flex;
-    gap: 100px;
+    gap: 60px;
 }
 
 .hard-skills {
     display: flex;
     flex-direction: column; 
-    width: 500px;
+    width: 550px;
 }
 
 .formacao {
@@ -123,18 +123,22 @@ body {
     margin-bottom: 30px; 
 }
 
-.titulo-experiencia {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    margin-bottom: 30px;
+.titulo-experiencia, .titulo-projetos, .titulo-certificados {
     text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+    width: 100%;
     border: 2px solid white;
     padding: 5px;
     border-radius: 8px;
     max-width: 100%; 
+    margin-top: -20px; 
+    background-color: #011941;
 }
 
-.titulo-habilidade, .titulo-formacao, .titulo-projetos {
+.titulo-habilidade, .titulo-formacao {
     color: rgb(255, 255, 255);
     max-width: 100; 
     font-size: 20px;
@@ -143,6 +147,7 @@ body {
     border: 2px solid white; 
     padding: 5px; 
     border-radius: 8px; 
+    background-color: #011941;
 }
 
 .descricao-cabecalho {
@@ -163,38 +168,7 @@ body {
     margin-bottom: 10px;
 }
 
-strong {
-    color: rgb(28, 174, 218);
-    font-size: 20px;
-}
-
-.descricao-container-2 {
-    display: flex;
-    align-items: center;
-    gap: 48px; 
-}
-
-.descricao__foto {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.foto-ia {
-    width: 402px;
-    height: auto;
-}
-
-.habilidade-projeto {
-    columns: 2;
-}
-
-.descricao-projeto {
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-.navegacao {
+.navegacao-exp {
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -205,6 +179,7 @@ strong {
     bottom: -60px;
     left: 900px;
     transform: translate(-50%, 0);
+    gap: 15px;
 }
 
 .bolinhas {
@@ -249,18 +224,6 @@ strong {
     display: block;
 }
 
-.titulo-experiencia {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 30px;
-    border-bottom: 2px solid white;
-    width: 100%;
-    padding-bottom: 5px;
-    margin-top: -20px;
-}
-
 .experiencia-container {
     display: flex;
     flex-direction: column;
@@ -280,3 +243,134 @@ strong {
 .experiencia-item {
     display: none;
 }
+
+strong {
+    color: rgb(28, 174, 218);
+    font-size: 20px;
+}
+
+.descricao-container-2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.descricao__foto {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.foto-ia {
+    width: 402px;
+    height: auto;
+}
+
+.habilidade-projeto {
+    columns: 5;
+    max-width: 100%;
+}
+
+.descricao-projeto {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.titulo-projetos {
+    margin-top: -200px;
+}
+
+.projeto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha com a foto da IA */
+    width: 100%;
+    margin-top: 200px; /* Remove qualquer margem superior */
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+}
+
+.projeto-item {
+    max-height: 180px;
+}
+
+.navegacao-pro {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    max-width: 150px; 
+    margin: 0 auto; 
+    position: absolute; 
+    bottom: -450px;
+    left: 900px;
+    transform: translate(-50%, 0);
+    gap: 15px; 
+}
+
+.certificados-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha com a foto da IA */
+    width: 100%;
+    margin-top: 20px; /* Remove qualquer margem superior */
+}
+
+.certificados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+}
+
+.titulo-certificados {
+    margin-top: 80px; 
+}
+
+.colunas-certificados {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    .facul-item, .oracle-item, .alura-item, .video-item, .dio-item, .fluencypass-item  {
+        max-width: 550px;   
+        background-color: #35486d;
+        border: #000000;
+        border-radius: 9px;
+        padding: 10px;
+    }
+
+    .facul-item{
+        columns: 2;
+        gap: 10px;
+    }
+    .oracle-item{
+        max-width: 600px; 
+    }
+
+}
+
+.certificado-item {
+    display: flex;
+    gap: 10px;
+}
+
+.titulo-facul, .titulo-oracle {
+    color: rgb(255, 255, 255);
+    max-width: 1000px; 
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px; 
+    margin-top: -10px;
+}
+
+.navegacao-cert {
+    display: flex;
+}
+
