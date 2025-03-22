@@ -112,15 +112,11 @@ body {
 .hard-skills {
     display: flex;
     flex-direction: column; 
-    width: 550px;
+    width: 400px;
 }
 
 .formacao {
     margin-bottom: 60px;
-}
-
-.experiencia {
-    margin-bottom: 30px; 
 }
 
 .titulo-experiencia, .titulo-projetos, .titulo-certificados {
@@ -153,7 +149,7 @@ body {
 .descricao-cabecalho {
     max-width: 100%;
     columns: 2;
-    gap: 490px;
+    gap: 450px;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -163,96 +159,52 @@ body {
     line-height: 1.5;
 }
 
+.experiencia-item {
+    display: flex;
+    gap: 30px;
+}
+
 .descricao-experiencia {
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
-.navegacao-exp {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
-    max-width: 150px; 
-    margin: 0 auto; 
-    position: absolute; 
-    bottom: -60px;
-    left: 900px;
-    transform: translate(-50%, 0);
-    gap: 15px;
-}
-
-.bolinhas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.bolinha {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease-in-out;
-    font-size: 14px;
-    color: white;
-}
-
-.bolinha.ativa {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.seta {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 50px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    position: relative;
-}
-
-.seta:hover {
+.seta-exp:hover, .seta-cert:hover, .seta-pro:hover {
     transform: translateY(-5%) scale(1.2);
-}
-
-.experiencia-item.ativo {
-    display: block;
 }
 
 .experiencia-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 .experiencia {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 1000px;
+    display: flex;              
+    justify-content: center;  
+    width: 100%;                  
+    gap: 20px;   
 }
 
-.experiencia-item {
-    display: none;
+.paragrafo-habilidades {
+    color: #04cdff;
+    font-size: 16px;
 }
 
 strong {
-    color: rgb(28, 174, 218);
+    color: #04cdff;
     font-size: 20px;
 }
 
 .descricao-container-2 {
     display: flex;
-    align-items: flex-start;
     gap: 20px; 
+}
+
+.lado-direito-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .descricao__foto {
@@ -283,49 +235,33 @@ strong {
 .projeto-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha com a foto da IA */
     width: 100%;
-    margin-top: 200px; /* Remove qualquer margem superior */
+    margin-top: 200px;
 }
 
 .projetos {
     display: flex;
-    flex-direction: column;
     width: 100%;
     max-width: 100%;
+    gap: 20px;
 }
 
 .projeto-item {
     max-height: 180px;
 }
 
-.navegacao-pro {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    width: 100%;
-    max-width: 150px; 
-    margin: 0 auto; 
-    position: absolute; 
-    bottom: -450px;
-    left: 900px;
-    transform: translate(-50%, 0);
-    gap: 15px; 
-}
-
 .certificados-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha com a foto da IA */
     width: 100%;
-    margin-top: 20px; /* Remove qualquer margem superior */
+    margin-top: 20px; 
 }
 
 .certificados {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
+    display: flex;              
+    justify-content: center;  
+    width: 100%;                  
+    gap: 20px;                    
 }
 
 .titulo-certificados {
@@ -334,11 +270,12 @@ strong {
 
 .colunas-certificados {
     display: flex;
-    gap: 10px;
     justify-content: center;
+    max-width: 100%;
+    width:760px ;
 
     .facul-item, .oracle-item, .alura-item, .video-item, .dio-item, .fluencypass-item  {
-        max-width: 550px;   
+        max-width: 550px;
         background-color: #35486d;
         border: #000000;
         border-radius: 9px;
@@ -346,18 +283,18 @@ strong {
     }
 
     .facul-item{
+        max-width: 490px;
         columns: 2;
         gap: 10px;
     }
     .oracle-item{
         max-width: 600px; 
     }
-
 }
 
 .certificado-item {
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 .titulo-facul, .titulo-oracle {
@@ -370,7 +307,24 @@ strong {
     margin-top: -10px;
 }
 
-.navegacao-cert {
-    display: flex;
+.seta-cert, .seta-pro, .seta-exp {
+    background-color: transparent;
+    align-items: center;   
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
+.seta-exp, .seta-pro, .seta-cert  {
+    margin-top: 50px;
+}
+
+#seta-dupla-esquerda-experiencias, #seta-dupla-esquerda-projetos, #seta-dupla-esquerda-certificados {
+    height: 0;            
+}
+
+#seta-dupla-direita-experiencias, #seta-dupla-direita-projetos, #seta-dupla-direita-certificados {
+    height: 0;                   
+} 

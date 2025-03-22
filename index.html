@@ -9,7 +9,6 @@
 </head>
 <body>
     <header></header>
-    
     <main class="apresentacao">
         <div class="apresentacao__conteudo">
             <h1 class="nome">Vinícius de Andrade Custódio</h1>
@@ -52,8 +51,10 @@
         
             <div class="experiencia-container">
                 <h1 class="titulo-experiencia">Experiência</h1>
-        
+
                 <div class="experiencia">
+                    <button class="seta-exp" id="seta-dupla-esquerda-experiencias">&#8656;</button>
+
                     <div class="experiencia-item" id="experiencia-1">
                         <p class="descricao-cabecalho">
                             <strong>Unicardio</strong><br>
@@ -79,19 +80,10 @@
                         • Gerenciei solicitações e suporte administrativo para a equipe de vendas, aumentando a eficiência na resolução de solicitações.<br>
                         • Desenvolvi relatórios detalhados para análise de desempenho da equipe, auxiliando em tomadas de decisão estratégicas.<br>
                         • Apoiei o time de Customer Success na implementação de novos processos, contribuindo para a melhoria na retenção de clientes.<br><br>
-                    </p>
+                        </p>
                     </div>
+                    <button class="seta-exp" id="seta-dupla-direita-experiencias">&#8658;</button>  
                 </div>
-
-                <div class="navegacao-exp">
-                    <button class="seta" id="seta-dupla-esquerda">&#8656;</button>
-                    <div class="bolinhas">
-                        <span class="bolinha" id="bolinha-1"></span>
-                        <span class="bolinha" id="bolinha-2"></span>
-                    </div>
-                    <button class="seta" id="seta-dupla-direita">&#8658;</button>   
-                </div>
-                
             </div>
         </div>
 
@@ -101,142 +93,143 @@
             <div class="descricao__foto">
                 <img class="foto-ia" src="Fotos/foto-IA.png" alt="Imagem minha gerada por IA">
             </div>
-            <div class="projeto-container">
-                 <h1 class="titulo-projetos">Projetos</h1>
-            <div class="projetos">
-                <div class="projeto-item" id="projeto-1">
-                <p class="descricao-cabecalho-2">
-                    <strong>Santander Dev Week 2023</strong>
-                </p><br>
-                <p class="descricao-projeto">Projeto de API RESTful para exibir as funções da interface do Banco Santander.</p><br>
-                    <h3>Tecnologias usadas</h3><br>
-                    <p class="habilidade-projeto"> • Java<br>
-                    • Spring Boot<br>
-                    • Spring JPA<br>
-                    • OpenAPI (Swagger)<br>
-                    • Railway<br><br>
-                </p><br>
-            </div>
-            <div class="projeto-item" id="projeto-2">
-                <p class="descricao-cabecalho-2">
-                    <strong>Software de Empréstimo</strong>
-                </p><br>
-                <p class="descricao-projeto">Trabalho acadêmico onde fiz o desenvolvimento de um software para gestão de ferramentas e empréstimos com CRUD,
-                    interface simples e funcionalidade completa.</p><br>
-                    <h3>Tecnologias usadas</h3><br>
-                    <p class="habilidade-projeto"> • Java<br>
-                    • MySQL<br>
-                </p>
-                </div>
-            </div>
-            <div class="projeto-item" id="projeto-3">
-                <p class="descricao-cabecalho-2">
-                    <strong>Projetos DIO</strong>
-                </p><br>
-                <p class="descricao-projeto">Projetos desenvolvidos ao longo dos cursos da DIO, variando de nível básico a intermediário, totalizando de 1 a
-                    10 projetos no momento.</p><br>
-                    <h3>Tecnologias usadas</h3><br>
-                    <p class="habilidade-projeto"> • Java<br>
-                    • Spring Boot<br>
-                    • Spring JPA<br>
-                    • Junit<br>
-                    • Mockito<br>
-                    • Maven<br>
-                    • Gradle<br>
-                    • Postgres<br>
-                    • MongoDB<br>
-                    • H2<br>
-                    • Swagger<br>
-                    • Docker<br>
-                    • Git e Github<br>
-                    • Métodologia Ágil Scrum<br>
-                </p>
-                </div>
-                <div class="projeto-item" id="projeto-4">
-                    <p class="descricao-cabecalho-2">
-                        <strong>Página Web (Portifólio) e Amigo secreto</strong>
-                    </p><br>
-                    <p class="descricao-projeto">Projeto de portfólio pessoal com HTML, CSS e JavaScript, que exibe habilidades, projetos e experiências e outro projeto
-                        com base em "Amigo Secreto", permitindo aos usuários sortear e seus colegas de forma divertida e dinâmica.</p><br>
-                        <h3>Tecnologias usadas</h3><br>
-                        <p class="habilidade-projeto"> • JavaScript<br>
-                        • HTML<br>
-                        • CSS<br>
-                    </p>
-                    </div>
+            <div class="lado-direito-container">
+                <div class="projeto-container">
+                     <h1 class="titulo-projetos">Projetos</h1>
 
-            <div class="navegacao-pro">
-                <button class="seta" id="seta-dupla-esquerda">&#8656;</button>
-                <div class="bolinhas">
-                    <span class="bolinha" id="bolinha-1"></span>
-                    <span class="bolinha" id="bolinha-2"></span>
-                    <span class="bolinha" id="bolinha-3"></span>
-                    <span class="bolinha" id="bolinha-4"></span>
-                </div>
-                <button class="seta" id="seta-dupla-direita">&#8658;</button>   
-            </div>
-
-            <div class="certificados-container">
-                <h1 class="titulo-certificados">Certificados</h1>
-                <div class="certificados">
-                    <div class="colunas-certificados">
-                        <button class="seta" id="seta-dupla-esquerda-certificado">&#8656;</button>
+                    <div class="projetos">
+                        <button class="seta-pro" id="seta-dupla-esquerda-projetos">&#8656;</button>
                         
-                        <div class="certificado-item" id="certificado-1">
-                            <div class="facul">
-                                <h1 class="titulo-facul"><strong> Faculdade (Unisul) </strong></h1>
-                                <p class="facul-item"> • Modelagem de software<br>
-                                    • Programação de soluções computacionais<br>
-                                    • Ambientes computacionais e conectividade<br>
-                                    • Análise de dados e big data<br>
-                                    • Inovação, sustentabilidade e competitividade empresarial<br>
-                                    • Sistemas computacionais e segurança<br>
-                                </p>
-                            </div>
-                            <div class="oracle">
-                                <h1 class="titulo-oracle"><strong> Oracle Academy </strong></h1>
-                                <p class="oracle-item"> • Database Design<br>
-                                    • Database Foundations<br>
-                                    • Java Foundations<br>
-                                    • Java Fundamentals<br>
-                                </p>
-                            </div>
-                        </div>
-            
-                        <div class="certificado-item" id="certificado-2">
-                            <div class="alura">
-                                <h1 class="titulo-facul"><strong> Alura + Oracle </strong></h1>
-                                <p class="alura-item"> • Programação G8 - ONE (HTML, CSS e Javascript)<br>
-                                    • Desenvolvimento pessoal G8 - ONE<br>
-                                </p>
-                            </div>
-                            <div class="guanabara">
-                                <h1 class="titulo-oracle"><strong> Cursos em Vídeos </strong></h1>
-                                <p class="video-item"> • MySQL (40h)<br>
-                                    • Excel (40h)<br>
-                                    • Inglês Módulo (1, 2 e 3)<br>
-                                </p>
-                            </div>
+                        <div class="projeto-item" id="projeto-1">
+                            <p class="descricao-cabecalho-2">
+                                <strong>Santander Dev Week 2023</strong>
+                            </p><br>
+                            <p class="descricao-projeto">Projeto desenvolvendo uma API RESTful para exibir e gerenciar as funções da interface do Banco Santander de forma simples, segura e eficiente.</p><br>
+                                <h3>Tecnologias usadas</h3><br>
+                                <p class="habilidade-projeto"> • Java<br>
+                                    • Spring Boot<br>
+                                    • Spring JPA<br>
+                                    • OpenAPI (Swagger)<br>
+                                    • Railway<br><br>
+                                </p><br>
                         </div>
 
-                        <div class="certificado-item" id="certificado-3">
-                            <div class="dio">
-                                <h1 class="titulo-facul"><strong> Digital Innovation One (DIO) </strong></h1>
-                                <p class="dio-item"> • Claro - Java com Spring Boot<br>
-                                    • Potência Tech powered by iFood - Java<br>
+                        <div class="projeto-item" id="projeto-2">
+                            <p class="descricao-cabecalho-2">
+                                <strong>Software de Empréstimo</strong>
+                            </p><br>
+                            <p class="descricao-projeto">Trabalho acadêmico onde fiz o desenvolvimento de um software para gestão de ferramentas e empréstimos com CRUD,
+                                interface simples e funcionalidade completa.</p><br>
+                                <h3>Tecnologias usadas</h3><br>
+                                <p class="habilidade-projeto"> • Java<br>
+                                    • MySQL<br>
                                 </p>
-                            </div>
-                            <div class="fluencypass">
-                                <h1 class="titulo-oracle"><strong> FluencyPass </strong></h1>
-                                <p class="fluencypass-item"> • Beginner 1<br>
-                                    • Beginner 2<br>
-                                </p>
-                            </div>
                         </div>
-                        <button class="seta" id="seta-dupla-direita-certificado">&#8658;</button>
+                    
+                        <div class="projeto-item" id="projeto-3">
+                            <p class="descricao-cabecalho-2">
+                                <strong>Projetos DIO</strong>
+                            </p><br>
+                            <p class="descricao-projeto">Projetos desenvolvidos ao longo dos cursos da DIO, variando de nível básico a intermediário, totalizando de 1 a
+                                10 projetos no momento.
+                            </p><br>
+                                <h3>Tecnologias usadas</h3><br>
+                                <p class="habilidade-projeto"> • Java<br>
+                                    • Spring Boot<br>
+                                    • Spring JPA<br>
+                                    • Junit<br>
+                                    • Mockito<br>
+                                    • Maven<br>
+                                    • Gradle<br>
+                                    • Postgres<br>
+                                    • MongoDB<br>
+                                    • H2<br>
+                                    • Swagger<br>
+                                    • Docker<br>
+                                    • Git e Github<br>
+                                    • Métodologia Ágil Scrum<br>
+                                </p>
+                        </div>
+                        <div class="projeto-item" id="projeto-4">
+                            <p class="descricao-cabecalho-2">
+                                <strong>Página Web (Portifólio) e Amigo secreto</strong>
+                            </p><br>
+                            <p class="descricao-projeto">Projeto de portfólio pessoal com HTML, CSS e JavaScript, que exibe habilidades, projetos e experiências e outro projeto
+                                com base em "Amigo Secreto", permitindo aos usuários sortear e seus colegas de forma divertida e dinâmica.</p><br>
+                                <h3>Tecnologias usadas</h3><br>
+                                <p class="habilidade-projeto"> • JavaScript<br>
+                                    • HTML<br>
+                                    • CSS<br>
+                                </p>
+                        </div>
+                        <button class="seta-pro" id="seta-dupla-direita-projetos">&#8658;</button> 
                     </div>
                 </div>
-            </div>            
+
+                <div class="certificados-container">
+                    <h1 class="titulo-certificados">Certificados</h1>
+
+                    <div class="certificados">
+                        <button class="seta-cert" id="seta-dupla-esquerda-certificados">&#8656;</button>
+                        <div class="colunas-certificados">
+                            
+                            <div class="certificado-item" id="certificado-1">
+                                <div class="facul">
+                                    <h1 class="titulo-facul"><strong> Faculdade (Unisul) </strong></h1>
+                                    <p class="facul-item"> • Modelagem de software<br>
+                                        • Programação de soluções computacionais<br>
+                                        • Ambientes computacionais e conectividade<br>
+                                        • Análise de dados e big data<br>
+                                        • Inovação, sustentabilidade e competitividade empresarial<br>
+                                        • Sistemas computacionais e segurança<br>
+                                    </p>
+                                </div>
+                                <div class="oracle">
+                                    <h1 class="titulo-oracle"><strong> Oracle Academy </strong></h1>
+                                    <p class="oracle-item"> • Database Design<br>
+                                        • Database Foundations<br>
+                                        • Java Foundations<br>
+                                        • Java Fundamentals<br>
+                                    </p>
+                                </div>
+                            </div>
+                
+                            <div class="certificado-item" id="certificado-2">
+                                <div class="alura">
+                                    <h1 class="titulo-facul"><strong> Alura + Oracle </strong></h1>
+                                    <p class="alura-item"> • Programação G8 - ONE (HTML, CSS e Javascript)<br>
+                                        • Desenvolvimento pessoal G8 - ONE<br>
+                                    </p>
+                                </div>
+                                <div class="guanabara">
+                                    <h1 class="titulo-oracle"><strong> Cursos em Vídeos </strong></h1>
+                                    <p class="video-item"> • MySQL (40h)<br>
+                                        • Excel (40h)<br>
+                                        • Inglês Módulo (1, 2 e 3)<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="certificado-item" id="certificado-3">
+                                <div class="dio">
+                                    <h1 class="titulo-facul"><strong> Digital Innovation One (DIO) </strong></h1>
+                                    <p class="dio-item"> • Claro - Java com Spring Boot<br>
+                                        • Potência Tech powered by iFood - Java<br>
+                                    </p>
+                                </div>
+                                <div class="fluencypass">
+                                    <h1 class="titulo-oracle"><strong> FluencyPass </strong></h1>
+                                    <p class="fluencypass-item"> • Beginner 1<br>
+                                        • Beginner 2<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="seta-cert" id="seta-dupla-direita-certificados">&#8658;</button>
+                    </div>
+                </div>   
+            </div>       
+        </div>  
      </div>
     </main>
 
