@@ -4,11 +4,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndexExperiencia = 0;
     const experiencias = document.querySelectorAll(".experiencia-item");
+    const bolinhasExp = document.querySelectorAll(".bolinha-exp");
     const totalExperiencias = experiencias.length;
 
     function mostrarExperiencia(index) {
         experiencias.forEach((experiencia, i) => {
             experiencia.style.display = i === index ? "block" : "none";
+        });
+
+        bolinhasExp.forEach((bolinhasExp, i) => {
+            if (i === index) {
+                bolinhasExp.classList.add("ativa");
+            } else {
+                bolinhasExp.classList.remove("ativa");
+            }
         });
     }
 
@@ -28,12 +37,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndexProjeto = 0;
     const projetos = document.querySelectorAll(".projeto-item");
+    const bolinhasPro = document.querySelectorAll(".bolinha-pro");
     const totalProjetos = projetos.length;
 
     function mostrarProjeto(index) {
-        projetos.forEach((projeto, i) => {
-            projeto.style.display = i === index ? "block" : "none";
-        });
+
+        projetos.forEach((projetos, i) => {
+        projetos.style.display = i === index ? "block" : "none";
+    });
+        
+    bolinhasPro.forEach((bolinhasPro, i) => {
+        if (i === index) {
+            bolinhasPro.classList.add("ativa");
+        } else {
+            bolinhasPro.classList.remove("ativa");
+        }
+    });
+        
     }
 
     document.querySelector("#seta-dupla-direita-projetos").addEventListener("click", function () {
@@ -52,11 +72,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndexCertificado = 0;
     const certificados = document.querySelectorAll(".certificado-item");
+    const bolinhasCert = document.querySelectorAll(".bolinha-cert");
     const totalCertificados = certificados.length;
 
     function mostrarCertificado(index) {
+
         certificados.forEach((certificado, i) => {
             certificado.style.display = i === index ? "flex" : "none";
+        });
+
+        bolinhasCert.forEach((bolinhasCert, i) => {
+            if (i === index) {
+                bolinhasCert.classList.add("ativa");
+            } else {
+                bolinhasCert.classList.remove("ativa");
+            }
         });
     }
 
@@ -73,5 +103,3 @@ document.addEventListener("DOMContentLoaded", function () {
     mostrarCertificado(currentIndexCertificado);
 
 });
-
-
